@@ -1,0 +1,27 @@
+//
+//  SystemPrefixHeader.pch
+//  GeihooGroups
+//
+//  Created by hjs on 15/8/19.
+//  Copyright (c) 2015年 hjs. All rights reserved.
+//
+
+
+//获取设备屏幕尺寸
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)//应用尺寸
+#define APP_WIDTH [[UIScreen mainScreen]applicationFrame].size.width
+#define APP_HEIGHT [[UIScreen mainScreen]applicationFrame].size.height
+
+//族族首页每个族族logo间的间隔
+#define GROUPS_ITEMS_SPACE 20
+#define FRIEND_ITEMS_SPACE 30
+
+// 获取RGB颜色
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+#define GRAY_COLOR RGBA(120, 120, 120, 1.0);
+#define SYSTEM_COLOR RGBA(46, 161, 206, 1.0);
+
+#import "Masonry.h"
+#import "UIView+ViewAddition.h"

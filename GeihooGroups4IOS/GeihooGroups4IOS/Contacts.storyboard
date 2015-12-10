@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BxI-XG-gH7">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--添加好友-->
+        <scene sceneID="Ywl-ka-R59">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="ywf-b6-IAo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bfb-ut-aDY"/>
+                        <viewControllerLayoutGuide type="bottom" id="7el-bz-RmF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ERS-Re-gbS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="搜索昵称/账号" translatesAutoresizingMaskIntoConstraints="NO" id="EKE-wW-skf">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <animations/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5b-ae-aC0">
+                                <rect key="frame" x="0.0" y="108" width="320" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1k6-Rz-d2z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="从手机通讯录添加" image="add_member">
+                                    <color key="titleColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F5b-ae-aC0" firstAttribute="leading" secondItem="ERS-Re-gbS" secondAttribute="leading" id="07U-fR-1Oo"/>
+                            <constraint firstAttribute="trailing" secondItem="F5b-ae-aC0" secondAttribute="trailing" id="RH8-Ul-Erh"/>
+                            <constraint firstItem="EKE-wW-skf" firstAttribute="top" secondItem="Bfb-ut-aDY" secondAttribute="bottom" id="UHB-fG-jat"/>
+                            <constraint firstItem="F5b-ae-aC0" firstAttribute="top" secondItem="EKE-wW-skf" secondAttribute="bottom" id="WBM-Rg-Tw4"/>
+                            <constraint firstItem="EKE-wW-skf" firstAttribute="leading" secondItem="ERS-Re-gbS" secondAttribute="leading" id="g8u-it-7cb"/>
+                            <constraint firstAttribute="trailing" secondItem="EKE-wW-skf" secondAttribute="trailing" id="yf3-cP-Zqz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="添加好友" id="cb5-MM-aBd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqk-Oj-eoN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376" y="-1618"/>
+        </scene>
+        <!--通讯-->
+        <scene sceneID="rQi-Ti-DSN">
+            <objects>
+                <viewController id="BxI-XG-gH7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xcY-eh-93f"/>
+                        <viewControllerLayoutGuide type="bottom" id="xyO-xp-wGm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E8w-lq-tCU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKP-jK-GEc">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="5Ff-Wa-E9y" kind="embed" id="6Y9-aw-WgB"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KKP-jK-GEc" firstAttribute="leading" secondItem="E8w-lq-tCU" secondAttribute="leading" id="Dib-2U-0ia"/>
+                            <constraint firstAttribute="trailing" secondItem="KKP-jK-GEc" secondAttribute="trailing" id="iGY-ZJ-gJr"/>
+                            <constraint firstItem="xyO-xp-wGm" firstAttribute="top" secondItem="KKP-jK-GEc" secondAttribute="bottom" id="jdj-F0-2RA"/>
+                            <constraint firstItem="KKP-jK-GEc" firstAttribute="top" secondItem="xcY-eh-93f" secondAttribute="bottom" id="us3-di-lfO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="通讯" id="55d-Gy-XXr">
+                        <barButtonItem key="leftBarButtonItem" image="top_home_image" id="vRj-Q7-7LU">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="BxI-XG-gH7" id="l1J-Fp-oim"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gKF-yW-TMd">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="ywf-b6-IAo" kind="push" id="fxf-y4-8ez"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zA6-fR-7ub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376" y="-879"/>
+        </scene>
+        <!--Contacts Tab View Controller-->
+        <scene sceneID="M31-BK-G1T">
+            <objects>
+                <viewController id="5Ff-Wa-E9y" customClass="ContactsTabViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Zz-C8-vV1"/>
+                        <viewControllerLayoutGuide type="bottom" id="rMV-nC-d3K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jwE-Wz-HSE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Bh-0i-8ZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826" y="-857"/>
+        </scene>
+        <!--Contact List Table View Controller-->
+        <scene sceneID="fTZ-hY-hbP">
+            <objects>
+                <viewController storyboardIdentifier="contactList" id="d7L-9r-ez0" customClass="ContactListTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i9F-V6-KJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="iZA-eX-fLa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ICy-y0-rDA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="搜索好友（昵称/账号）" translatesAutoresizingMaskIntoConstraints="NO" id="n6e-ng-bu6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <animations/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpA-FP-BUE">
+                                <rect key="frame" x="0.0" y="44" width="320" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RFi-vt-QAh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="添加好友" image="add_member">
+                                    <color key="titleColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XeE-nJ-PdT">
+                                <rect key="frame" x="0.0" y="75" width="320" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="hfH-GK-JCW"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T7i-3I-Wrk">
+                                <rect key="frame" x="0.0" y="77" width="320" height="491"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="d7L-9r-ez0" id="1Du-LP-T9s"/>
+                                    <outlet property="delegate" destination="d7L-9r-ez0" id="FcJ-34-4uy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XeE-nJ-PdT" firstAttribute="top" secondItem="KpA-FP-BUE" secondAttribute="bottom" constant="1" id="2ls-eD-ArB"/>
+                            <constraint firstAttribute="trailing" secondItem="T7i-3I-Wrk" secondAttribute="trailing" id="9dk-wO-zGI"/>
+                            <constraint firstItem="n6e-ng-bu6" firstAttribute="top" secondItem="ICy-y0-rDA" secondAttribute="top" id="ItI-k1-tze"/>
+                            <constraint firstItem="KpA-FP-BUE" firstAttribute="leading" secondItem="ICy-y0-rDA" secondAttribute="leading" id="JlV-ew-a3N"/>
+                            <constraint firstItem="KpA-FP-BUE" firstAttribute="top" secondItem="n6e-ng-bu6" secondAttribute="bottom" id="Lrc-m7-XwF"/>
+                            <constraint firstItem="T7i-3I-Wrk" firstAttribute="leading" secondItem="ICy-y0-rDA" secondAttribute="leading" id="SI2-sj-Bad"/>
+                            <constraint firstAttribute="trailing" secondItem="XeE-nJ-PdT" secondAttribute="trailing" id="af3-Ue-JrE"/>
+                            <constraint firstAttribute="trailing" secondItem="KpA-FP-BUE" secondAttribute="trailing" id="b5i-t6-NFl"/>
+                            <constraint firstItem="XeE-nJ-PdT" firstAttribute="leading" secondItem="ICy-y0-rDA" secondAttribute="leading" id="bua-ey-HMT"/>
+                            <constraint firstItem="iZA-eX-fLa" firstAttribute="top" secondItem="T7i-3I-Wrk" secondAttribute="bottom" id="gOI-Ci-C81"/>
+                            <constraint firstItem="XeE-nJ-PdT" firstAttribute="top" secondItem="KpA-FP-BUE" secondAttribute="bottom" constant="1" id="hkP-7M-SRo"/>
+                            <constraint firstItem="T7i-3I-Wrk" firstAttribute="top" secondItem="XeE-nJ-PdT" secondAttribute="bottom" constant="1" id="kAw-Hj-vmk"/>
+                            <constraint firstAttribute="trailing" secondItem="n6e-ng-bu6" secondAttribute="trailing" id="mEd-e9-kdb"/>
+                            <constraint firstItem="n6e-ng-bu6" firstAttribute="leading" secondItem="ICy-y0-rDA" secondAttribute="leading" id="pJm-Qz-CMi"/>
+                            <constraint firstItem="KpA-FP-BUE" firstAttribute="top" secondItem="n6e-ng-bu6" secondAttribute="bottom" id="vPT-Yg-pA3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contactsTableView" destination="T7i-3I-Wrk" id="Pc1-ad-FIe"/>
+                        <outlet property="searchBar" destination="n6e-ng-bu6" id="yON-lI-eZg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIm-Rb-AP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2272" y="-476"/>
+        </scene>
+        <!--Message Table View Controller-->
+        <scene sceneID="o4I-8E-hcC">
+            <objects>
+                <tableViewController storyboardIdentifier="message" id="YYd-6H-o2y" customClass="MessageTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="gKp-g6-xKB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="YYd-6H-o2y" id="d2w-Hg-fRu"/>
+                            <outlet property="delegate" destination="YYd-6H-o2y" id="iEz-ID-jN0"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T60-p0-hvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2272" y="-1297"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add_member" width="30" height="30"/>
+        <image name="top_home_image" width="30" height="30"/>
+    </resources>
+</document>

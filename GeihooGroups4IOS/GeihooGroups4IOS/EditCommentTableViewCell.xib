@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="editCell" id="KGk-i7-Jjw" customClass="EditCommentTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SYI-vN-E5N" customClass="CircleImageView">
+                        <rect key="frame" x="8" y="5" width="50" height="50"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="W3a-yN-UHW"/>
+                            <constraint firstAttribute="height" constant="50" id="oNv-KV-3bA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="imageType">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bku-2d-RM8">
+                        <rect key="frame" x="66" y="19" width="42" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="SYI-vN-E5N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="gLT-AN-pGI"/>
+                    <constraint firstItem="SYI-vN-E5N" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mDn-yE-TN3"/>
+                    <constraint firstItem="bku-2d-RM8" firstAttribute="leading" secondItem="SYI-vN-E5N" secondAttribute="trailing" constant="8" id="rm7-U7-835"/>
+                    <constraint firstItem="bku-2d-RM8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vHJ-xy-ZyW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="iconImageView" destination="SYI-vN-E5N" id="RoG-qC-0Xj"/>
+                <outlet property="nameLabel" destination="bku-2d-RM8" id="zTM-Dp-dlg"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="365.5"/>
+        </tableViewCell>
+    </objects>
+</document>

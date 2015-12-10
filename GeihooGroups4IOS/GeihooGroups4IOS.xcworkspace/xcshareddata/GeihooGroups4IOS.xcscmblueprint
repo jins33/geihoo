@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1228f3fe-babd-5049-a254-758b5509aa15++9314",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "1228f3fe-babd-5049-a254-758b5509aa15++9314" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1228f3fe-babd-5049-a254-758b5509aa15++9314" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1B788EEF-E730-4BEF-BE9A-551EFB317484",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1228f3fe-babd-5049-a254-758b5509aa15++9314" : "GeihooGroups4IOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GeihooGroups4IOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GeihooGroups4IOS.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/geihoo.f3322.net\/svn\/%E5%93%A5%E6%B1%89%E7%BD%91%E7%BB%9C",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1228f3fe-babd-5049-a254-758b5509aa15++9314"
+    }
+  ]
+}
