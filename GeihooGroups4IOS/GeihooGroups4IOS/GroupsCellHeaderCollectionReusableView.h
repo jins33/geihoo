@@ -10,5 +10,6 @@
 
 @interface GroupsCellHeaderCollectionReusableView : UICollectionReusableView
 @property (weak, nonatomic) IBOutlet UILabel *societyTypeLabel;
+@property (weak, nonatomic) IBOutlet UIButton *editCommonGroupsBtn;
 
 @end

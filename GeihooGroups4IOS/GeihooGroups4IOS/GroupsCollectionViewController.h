@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 #import "SystemPrefixHeader.pch"
 #import "GroupsMainCollectionViewCell.h"
@@ -14,9 +15,15 @@
 #import "GroupsCellHeaderCollectionReusableView.h"
 #import "SocietyBean.h"
 #import "SystemParaManager.h"
+#import "ResultsTableViewController.h"
+#import "GroupsTypeTabViewController.h"
 
-@interface GroupsCollectionViewController : UICollectionViewController
+@interface GroupsCollectionViewController : UIViewController<UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UISearchBarDelegate>
 
-@property (nonatomic, strong) id baseController;
+@property (nonatomic, strong) UIViewController *baseController;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIView *searchView;
+@property (strong, nonatomic) UISearchController *searchController;
+
 
 @end

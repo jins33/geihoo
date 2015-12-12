@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -16,7 +17,6 @@
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBR-cH-mwK" customClass="CircleImageButton">
                         <rect key="frame" x="8" y="8" width="50" height="50"/>
-                        <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="CvI-iN-rVj"/>
                             <constraint firstAttribute="width" constant="50" id="t2B-VH-24J"/>
@@ -32,7 +32,6 @@
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="旅人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4I0-wu-aJ8">
                         <rect key="frame" x="66" y="13" width="34" height="21"/>
-                        <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="VIJ-6E-O7y"/>
                         </constraints>
@@ -42,7 +41,6 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="旅游社   5分钟前" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlN-xi-tW0">
                         <rect key="frame" x="66" y="37" width="75.5" height="21"/>
-                        <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="4cV-7g-th9"/>
                         </constraints>
@@ -52,7 +50,6 @@
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qv5-HQ-sUz">
                         <rect key="frame" x="282" y="8" width="30" height="30"/>
-                        <animations/>
                         <constraints>
                             <constraint firstAttribute="width" constant="30" id="b3t-dr-fuH"/>
                             <constraint firstAttribute="height" constant="30" id="qWa-Vp-vQS"/>
@@ -66,7 +63,6 @@
                     </button>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="此松是黄山松的代表，乃至整个黄山的象征，它恰似一位好客的主人，挥展双臂，热情欢迎海内外宾客来黄山游览。" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uA-wM-ffM">
                         <rect key="frame" x="0.0" y="59" width="320" height="75.5"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="75.5" id="0ZS-xB-g8p"/>
@@ -76,24 +72,20 @@
                     </textView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test_content_img_0" translatesAutoresizingMaskIntoConstraints="NO" id="Jw4-ov-0yb">
                         <rect key="frame" x="8" y="136" width="304" height="180"/>
-                        <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="180" id="mcg-Sf-uAn"/>
                         </constraints>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaD-S7-npM">
                         <rect key="frame" x="8" y="324" width="35" height="30"/>
-                        <animations/>
                         <state key="normal" title="赞 15"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJL-BT-Qdr">
                         <rect key="frame" x="63" y="324" width="44" height="30"/>
-                        <animations/>
                         <state key="normal" title="评论 8"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHH-jp-9MF">
                         <rect key="frame" x="182" y="324" width="30" height="30"/>
-                        <animations/>
                         <constraints>
                             <constraint firstAttribute="width" constant="30" id="1dT-OQ-aQ8"/>
                             <constraint firstAttribute="height" constant="30" id="std-o4-FOi"/>
@@ -102,7 +94,6 @@
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAI-Su-N5a">
                         <rect key="frame" x="282" y="324" width="30" height="30"/>
-                        <animations/>
                         <constraints>
                             <constraint firstAttribute="width" constant="30" id="cy2-kN-olt"/>
                             <constraint firstAttribute="height" constant="30" id="ooE-qu-voF"/>
@@ -112,7 +103,6 @@
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOs-q8-sVV">
                         <rect key="frame" x="232" y="324" width="30" height="30"/>
-                        <animations/>
                         <constraints>
                             <constraint firstAttribute="width" constant="30" id="pIt-wd-zFX"/>
                             <constraint firstAttribute="height" constant="30" id="xfW-pl-2nT"/>
@@ -121,14 +111,12 @@
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5y-Bf-LHH">
                         <rect key="frame" x="8" y="362" width="304" height="1"/>
-                        <animations/>
                         <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="MUh-WP-9Lh"/>
                         </constraints>
                     </view>
                 </subviews>
-                <animations/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="3uA-wM-ffM" secondAttribute="trailing" id="0dp-Sm-ckp"/>
                     <constraint firstItem="4I0-wu-aJ8" firstAttribute="leading" secondItem="XBR-cH-mwK" secondAttribute="trailing" constant="8" id="8kY-UX-gr2"/>
@@ -159,7 +147,6 @@
                     <constraint firstItem="fAI-Su-N5a" firstAttribute="leading" secondItem="BOs-q8-sVV" secondAttribute="trailing" constant="20" id="v5d-dW-qtZ"/>
                 </constraints>
             </tableViewCellContentView>
-            <animations/>
             <connections>
                 <outlet property="commentBtn" destination="BOs-q8-sVV" id="sy1-ju-fkn"/>
                 <outlet property="postDescriptionTextView" destination="3uA-wM-ffM" id="psv-vd-KPn"/>
@@ -173,10 +160,10 @@
     </objects>
     <resources>
         <image name="arrow_down" width="30" height="30"/>
-        <image name="icon_comment" width="30" height="30"/>
-        <image name="icon_likeit" width="30" height="30"/>
-        <image name="icon_share" width="30" height="30"/>
-        <image name="test_content_img_0" width="200" height="200"/>
+        <image name="icon_comment" width="60" height="60"/>
+        <image name="icon_likeit" width="60" height="60"/>
+        <image name="icon_share" width="60" height="60"/>
+        <image name="test_content_img_0" width="400" height="300"/>
         <image name="test_head_img_1" width="200" height="200"/>
     </resources>
 </document>

@@ -38,8 +38,8 @@
 		6E583AF91C16C53300785D00 /* filesByTime.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E583AF81C16C53300785D00 /* filesByTime.plist */; };
 		6E583AFC1C16C86900785D00 /* FileTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E583AFB1C16C86900785D00 /* FileTabViewController.m */; };
 		6E5F67BD1BB5379E003B4504 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F67BC1BB5379E003B4504 /* FirstViewController.m */; };
+		6E64935C1C1A7D5700386D54 /* FriendsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E64935B1C1A7D5700386D54 /* FriendsMainViewController.m */; };
 		6E6565D11B93FFC4006DE6A0 /* SocietyMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6565D01B93FFC4006DE6A0 /* SocietyMainTableViewController.m */; };
-		6E6791741BA2B3CF00B856C7 /* GroupsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6791731BA2B3CF00B856C7 /* GroupsMainViewController.m */; };
 		6E68A9291BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68A9271BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.m */; };
 		6E68A92A1BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E68A9281BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.xib */; };
 		6E87036C1BAA9D1000C2B128 /* GroupsMainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E87036A1BAA9D1000C2B128 /* GroupsMainCollectionViewCell.m */; };
@@ -176,10 +176,10 @@
 		6E583AFB1C16C86900785D00 /* FileTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileTabViewController.m; sourceTree = "<group>"; };
 		6E5F67BB1BB5379E003B4504 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		6E5F67BC1BB5379E003B4504 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		6E64935A1C1A7D5700386D54 /* FriendsMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsMainViewController.h; sourceTree = "<group>"; };
+		6E64935B1C1A7D5700386D54 /* FriendsMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsMainViewController.m; sourceTree = "<group>"; };
 		6E6565CF1B93FFC4006DE6A0 /* SocietyMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocietyMainTableViewController.h; sourceTree = "<group>"; };
 		6E6565D01B93FFC4006DE6A0 /* SocietyMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocietyMainTableViewController.m; sourceTree = "<group>"; };
-		6E6791721BA2B3CF00B856C7 /* GroupsMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsMainViewController.h; sourceTree = "<group>"; };
-		6E6791731BA2B3CF00B856C7 /* GroupsMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsMainViewController.m; sourceTree = "<group>"; };
 		6E68A9261BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsCellFooterCollectionReusableView.h; sourceTree = "<group>"; };
 		6E68A9271BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsCellFooterCollectionReusableView.m; sourceTree = "<group>"; };
 		6E68A9281BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsCellFooterCollectionReusableView.xib; sourceTree = "<group>"; };
@@ -669,6 +669,10 @@
 				6EFBB6AF1BE0C5D20088308D /* EditCommentTableViewCell.h */,
 				6EFBB6B01BE0C5D20088308D /* EditCommentTableViewCell.m */,
 				6EFBB6B11BE0C5D20088308D /* EditCommentTableViewCell.xib */,
+				6E64935A1C1A7D5700386D54 /* FriendsMainViewController.h */,
+				6E64935B1C1A7D5700386D54 /* FriendsMainViewController.m */,
+				6E20189E1C02F6760032C2A3 /* GroupInfoViewController.h */,
+				6E20189F1C02F6760032C2A3 /* GroupInfoViewController.m */,
 				6E68A9261BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.h */,
 				6E68A9271BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.m */,
 				6E68A9281BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.xib */,
@@ -677,23 +681,19 @@
 				6EBAA1671BABF21B0063E251 /* GroupsCellHeaderCollectionReusableView.xib */,
 				6E57BE551BDE5B97003928BE /* GroupsCollectionViewController.h */,
 				6E57BE561BDE5B97003928BE /* GroupsCollectionViewController.m */,
+				6E2018981C02AF890032C2A3 /* GroupSetingViewController.h */,
+				6E2018991C02AF890032C2A3 /* GroupSetingViewController.m */,
 				6E8703691BAA9D1000C2B128 /* GroupsMainCollectionViewCell.h */,
 				6E87036A1BAA9D1000C2B128 /* GroupsMainCollectionViewCell.m */,
 				6E87036B1BAA9D1000C2B128 /* GroupsMainCollectionViewCell.xib */,
-				6E6791721BA2B3CF00B856C7 /* GroupsMainViewController.h */,
-				6E6791731BA2B3CF00B856C7 /* GroupsMainViewController.m */,
 				6E57BE521BDE5911003928BE /* GroupsTypeTabViewController.h */,
 				6E57BE531BDE5911003928BE /* GroupsTypeTabViewController.m */,
 				6EB7CCD11BD63C2900281ACA /* ResultsTableViewController.h */,
 				6EB7CCD21BD63C2900281ACA /* ResultsTableViewController.m */,
-				6EDCE1FC1C01C821002789FB /* TypeCollectionViewController.h */,
-				6EDCE1FD1C01C821002789FB /* TypeCollectionViewController.m */,
-				6E2018981C02AF890032C2A3 /* GroupSetingViewController.h */,
-				6E2018991C02AF890032C2A3 /* GroupSetingViewController.m */,
 				6E20189B1C02BEB80032C2A3 /* SelectMemberTableViewController.h */,
 				6E20189C1C02BEB80032C2A3 /* SelectMemberTableViewController.m */,
-				6E20189E1C02F6760032C2A3 /* GroupInfoViewController.h */,
-				6E20189F1C02F6760032C2A3 /* GroupInfoViewController.m */,
+				6EDCE1FC1C01C821002789FB /* TypeCollectionViewController.h */,
+				6EDCE1FD1C01C821002789FB /* TypeCollectionViewController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -880,6 +880,7 @@
 				6ED17F251C1032E500978BCF /* NSDictionary+StringAttributeForKey.m in Sources */,
 				6E68A9291BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.m in Sources */,
 				6ECFE0F31C044B98002EB5A0 /* AddMemberViewController.m in Sources */,
+				6E64935C1C1A7D5700386D54 /* FriendsMainViewController.m in Sources */,
 				6E1DBA231BB14B4B0009428F /* ContactsTabViewController.m in Sources */,
 				6EC5ACC41BCBB338006F6280 /* PresentActivityTableViewController.m in Sources */,
 				6E104B6E1BB916CE0055015C /* MeViewController.m in Sources */,
@@ -919,7 +920,6 @@
 				6EC3972F1BB28D6B00F1BAA4 /* MessageTableViewController.m in Sources */,
 				6ED17F2D1C1032E500978BCF /* SocietyPostsTableViewCell.m in Sources */,
 				6ED17F261C1032E500978BCF /* UIImage+ImageAddition.m in Sources */,
-				6E6791741BA2B3CF00B856C7 /* GroupsMainViewController.m in Sources */,
 				6EFF1A161C0ADB1700F8040E /* MemberShipViewController.m in Sources */,
 				6ED17F351C1032E500978BCF /* PlaceholderTextView.m in Sources */,
 				6E01AEDD1B9D822600B4FE99 /* SocietyPostBeans.m in Sources */,

@@ -19,19 +19,15 @@
     
     [self setTitleFont:[UIFont systemFontOfSize:13]];
     
-    GroupsCollectionViewController *groupsType1 = [self.storyboard instantiateViewControllerWithIdentifier:@"groupsType"];
-    [groupsType1 setTitle:@"常用（8）"];
-    [groupsType1 setBaseController:_baseController];
+    GroupsCollectionViewController *groupsMain = [self.storyboard instantiateViewControllerWithIdentifier:@"groupsMain"];
+    [groupsMain setTitle:@"族族"];
+    [groupsMain setBaseController:self];
     
-    GroupsCollectionViewController *groupsType2 = [self.storyboard instantiateViewControllerWithIdentifier:@"groupsType"];
-    [groupsType2 setTitle:@"私密（8）"];
-    [groupsType2 setBaseController:_baseController];
+    FriendsMainViewController *friendsMain = [self.storyboard instantiateViewControllerWithIdentifier:@"friendsMain"];
+    [friendsMain setTitle:@"朋友圈"];
+    [friendsMain setBaseController:self];
     
-    GroupsCollectionViewController *groupsType3 = [self.storyboard instantiateViewControllerWithIdentifier:@"groupsType"];
-    [groupsType3 setTitle:@"公开（8）"];
-    [groupsType3 setBaseController:_baseController];
-    
-    [self initControllers:@[groupsType1, groupsType2, groupsType3]];
+    [self initControllers:@[groupsMain, friendsMain]];
 }
 
 - (void)viewDidLoad {

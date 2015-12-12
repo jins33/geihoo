@@ -8,9 +8,11 @@
 
 #import "JPTabViewController.h"
 #import "GroupsCollectionViewController.h"
+#import "FriendsMainViewController.h"
 
 @interface GroupsTypeTabViewController : JPTabViewController
 
-@property (nonatomic, strong) id baseController;
+//@property (nonatomic, strong) id baseController;
+@property (strong, nonatomic) UISearchController *searchController;
 
 @end

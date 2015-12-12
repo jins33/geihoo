@@ -10,6 +10,14 @@
 
 @implementation GroupsCellHeaderCollectionReusableView
 
+- (instancetype)init{
+    if (self = [super init]) {
+        self = [[[NSBundle mainBundle]loadNibNamed:@"GroupsCellHeaderCollectionReusableView" owner:nil options:nil]firstObject];
+        self.frame = CGRectMake(0, 0, 320, 30);
+    }
+    return self;
+}
+
 - (void)awakeFromNib {
     // Initialization code
 }
