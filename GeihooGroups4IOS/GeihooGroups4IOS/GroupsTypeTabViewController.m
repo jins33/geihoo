@@ -16,9 +16,7 @@
 
 - (void)loadView{
     [super loadView];
-    
-    [self setTitleFont:[UIFont systemFontOfSize:13]];
-    
+        
     GroupsCollectionViewController *groupsMain = [self.storyboard instantiateViewControllerWithIdentifier:@"groupsMain"];
     [groupsMain setTitle:@"族族"];
     [groupsMain setBaseController:self];

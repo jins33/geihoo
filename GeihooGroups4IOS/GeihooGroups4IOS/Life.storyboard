@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MBd-3x-MN5">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--生活-->
+        <scene sceneID="gIc-48-wLW">
+            <objects>
+                <viewController id="MBd-3x-MN5" customClass="LifeMainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oH1-gc-NXv"/>
+                        <viewControllerLayoutGuide type="bottom" id="LAa-J4-zq0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RQJ-I5-sDr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xingkong" translatesAutoresizingMaskIntoConstraints="NO" id="haC-h2-N6v">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Qff-xK-Usz">
+                                <rect key="frame" x="20" y="84" width="280" height="464"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="drq-dh-3fv">
+                                    <size key="itemSize" width="77" height="107"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="MBd-3x-MN5" id="PlC-6u-xvY"/>
+                                    <outlet property="delegate" destination="MBd-3x-MN5" id="6H5-pv-tqu"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Qff-xK-Usz" secondAttribute="trailing" constant="20" id="3tj-on-793"/>
+                            <constraint firstAttribute="trailing" secondItem="haC-h2-N6v" secondAttribute="trailing" id="I4w-8Z-E6Q"/>
+                            <constraint firstItem="haC-h2-N6v" firstAttribute="top" secondItem="oH1-gc-NXv" secondAttribute="bottom" id="Px7-Zg-TWc"/>
+                            <constraint firstItem="Qff-xK-Usz" firstAttribute="leading" secondItem="RQJ-I5-sDr" secondAttribute="leading" constant="20" id="a1I-IV-n1b"/>
+                            <constraint firstItem="LAa-J4-zq0" firstAttribute="top" secondItem="haC-h2-N6v" secondAttribute="bottom" id="gFc-eA-ZPZ"/>
+                            <constraint firstItem="haC-h2-N6v" firstAttribute="leading" secondItem="RQJ-I5-sDr" secondAttribute="leading" id="nUq-YR-fc2"/>
+                            <constraint firstItem="Qff-xK-Usz" firstAttribute="top" secondItem="oH1-gc-NXv" secondAttribute="bottom" constant="20" id="v8T-qB-Gbe"/>
+                            <constraint firstItem="LAa-J4-zq0" firstAttribute="top" secondItem="Qff-xK-Usz" secondAttribute="bottom" constant="20" id="ybS-FJ-La2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="生活" id="kRS-pc-U9R">
+                        <barButtonItem key="leftBarButtonItem" image="top_home_image" id="IEo-u4-2g4">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="MBd-3x-MN5" id="34H-kP-ZUx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Qff-xK-Usz" id="QzU-6P-stZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fg-50-57Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449" y="269"/>
+        </scene>
+        <!--生活-->
+        <scene sceneID="Hj4-ty-L4O">
+            <objects>
+                <viewController id="IXU-l9-tSo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LNS-Ds-Fdb"/>
+                        <viewControllerLayoutGuide type="bottom" id="54J-nd-CIW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sxu-Jb-J7K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xingkong" translatesAutoresizingMaskIntoConstraints="NO" id="OGr-FN-ZS9">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NME-Sv-CbV">
+                                <rect key="frame" x="20" y="84" width="280" height="464"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="54J-nd-CIW" firstAttribute="top" secondItem="NME-Sv-CbV" secondAttribute="bottom" constant="20" id="4ya-ie-lAw"/>
+                            <constraint firstItem="54J-nd-CIW" firstAttribute="top" secondItem="OGr-FN-ZS9" secondAttribute="bottom" id="KxC-EN-xPh"/>
+                            <constraint firstItem="NME-Sv-CbV" firstAttribute="top" secondItem="LNS-Ds-Fdb" secondAttribute="bottom" constant="20" id="RYB-Q9-ez0"/>
+                            <constraint firstItem="OGr-FN-ZS9" firstAttribute="leading" secondItem="Sxu-Jb-J7K" secondAttribute="leading" id="TmM-X2-cs4"/>
+                            <constraint firstItem="NME-Sv-CbV" firstAttribute="leading" secondItem="Sxu-Jb-J7K" secondAttribute="leading" constant="20" id="VSm-MI-IiB"/>
+                            <constraint firstAttribute="trailing" secondItem="NME-Sv-CbV" secondAttribute="trailing" constant="20" id="aiN-MZ-aZ2"/>
+                            <constraint firstItem="OGr-FN-ZS9" firstAttribute="top" secondItem="LNS-Ds-Fdb" secondAttribute="bottom" id="gWw-mG-ZxU"/>
+                            <constraint firstAttribute="trailing" secondItem="OGr-FN-ZS9" secondAttribute="trailing" id="yJ1-Ky-OKR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="生活" id="Mhj-WH-eEO">
+                        <barButtonItem key="leftBarButtonItem" image="top_home_image" id="f9p-Ub-ho3"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jj-kO-OEy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449" y="990"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="top_home_image" width="30" height="30"/>
+        <image name="xingkong" width="364" height="633"/>
+    </resources>
+</document>

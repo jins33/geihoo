@@ -27,6 +27,8 @@
 		6E20189A1C02AF890032C2A3 /* GroupSetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2018991C02AF890032C2A3 /* GroupSetingViewController.m */; };
 		6E20189D1C02BEB80032C2A3 /* SelectMemberTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E20189C1C02BEB80032C2A3 /* SelectMemberTableViewController.m */; };
 		6E2018A01C02F6760032C2A3 /* GroupInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E20189F1C02F6760032C2A3 /* GroupInfoViewController.m */; };
+		6E248D9C1C311F9300DACEAE /* Life.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E248D9B1C311F9300DACEAE /* Life.storyboard */; };
+		6E248D9F1C312BD900DACEAE /* LifeMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E248D9E1C312BD900DACEAE /* LifeMainViewController.m */; };
 		6E263C8A1C0EC1C3004CFE33 /* AddActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E263C891C0EC1C3004CFE33 /* AddActivityViewController.m */; };
 		6E41464B1BCDE9060057A359 /* AlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E41464A1BCDE9060057A359 /* AlbumTableViewController.m */; };
 		6E41464E1BCDE9630057A359 /* AlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E41464D1BCDE9630057A359 /* AlbumTableViewCell.m */; };
@@ -156,6 +158,9 @@
 		6E20189C1C02BEB80032C2A3 /* SelectMemberTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectMemberTableViewController.m; sourceTree = "<group>"; };
 		6E20189E1C02F6760032C2A3 /* GroupInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupInfoViewController.h; sourceTree = "<group>"; };
 		6E20189F1C02F6760032C2A3 /* GroupInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupInfoViewController.m; sourceTree = "<group>"; };
+		6E248D9B1C311F9300DACEAE /* Life.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Life.storyboard; sourceTree = "<group>"; };
+		6E248D9D1C312BD900DACEAE /* LifeMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeMainViewController.h; sourceTree = "<group>"; };
+		6E248D9E1C312BD900DACEAE /* LifeMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeMainViewController.m; sourceTree = "<group>"; };
 		6E263C881C0EC1C3004CFE33 /* AddActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddActivityViewController.h; sourceTree = "<group>"; };
 		6E263C891C0EC1C3004CFE33 /* AddActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddActivityViewController.m; sourceTree = "<group>"; };
 		6E4146491BCDE9060057A359 /* AlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumTableViewController.h; sourceTree = "<group>"; };
@@ -183,9 +188,9 @@
 		6E68A9261BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsCellFooterCollectionReusableView.h; sourceTree = "<group>"; };
 		6E68A9271BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsCellFooterCollectionReusableView.m; sourceTree = "<group>"; };
 		6E68A9281BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsCellFooterCollectionReusableView.xib; sourceTree = "<group>"; };
-		6E8703691BAA9D1000C2B128 /* GroupsMainCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsMainCollectionViewCell.h; sourceTree = "<group>"; };
-		6E87036A1BAA9D1000C2B128 /* GroupsMainCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsMainCollectionViewCell.m; sourceTree = "<group>"; };
-		6E87036B1BAA9D1000C2B128 /* GroupsMainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsMainCollectionViewCell.xib; sourceTree = "<group>"; };
+		6E8703691BAA9D1000C2B128 /* GroupsMainCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupsMainCollectionViewCell.h; path = ../../GroupsMainCollectionViewCell.h; sourceTree = "<group>"; };
+		6E87036A1BAA9D1000C2B128 /* GroupsMainCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupsMainCollectionViewCell.m; path = ../../GroupsMainCollectionViewCell.m; sourceTree = "<group>"; };
+		6E87036B1BAA9D1000C2B128 /* GroupsMainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GroupsMainCollectionViewCell.xib; path = ../../GroupsMainCollectionViewCell.xib; sourceTree = "<group>"; };
 		6E8754481C06C57100917B2A /* AddPicCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPicCollectionViewController.h; sourceTree = "<group>"; };
 		6E8754491C06C57100917B2A /* AddPicCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPicCollectionViewController.m; sourceTree = "<group>"; };
 		6E88C9D21B8F00F200475EBF /* GeihooGroups4IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeihooGroups4IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -373,6 +378,16 @@
 			name = Me;
 			sourceTree = "<group>";
 		};
+		6E5E9F561C302BBE0035FBF4 /* Life */ = {
+			isa = PBXGroup;
+			children = (
+				6E248D9B1C311F9300DACEAE /* Life.storyboard */,
+				6E248D9D1C312BD900DACEAE /* LifeMainViewController.h */,
+				6E248D9E1C312BD900DACEAE /* LifeMainViewController.m */,
+			);
+			name = Life;
+			sourceTree = "<group>";
+		};
 		6E88C9C91B8F00F200475EBF = {
 			isa = PBXGroup;
 			children = (
@@ -441,11 +456,12 @@
 			children = (
 				6ED9001D1BB24F08008D0D0C /* Main */,
 				6ED9001E1BB24F8A008D0D0C /* Contacts */,
-				6E89ED261BB3D1F4009D3EDC /* Trends */,
+				6E5E9F561C302BBE0035FBF4 /* Life */,
 				6E104B6B1BB916740055015C /* Me */,
-				6E88CA251B8F033200475EBF /* Groups.storyboard */,
+				6E89ED261BB3D1F4009D3EDC /* Trends */,
 				6E88CA261B8F033200475EBF /* RootViewController.h */,
 				6E88CA271B8F033200475EBF /* RootViewController.m */,
+				6E88CA251B8F033200475EBF /* Groups.storyboard */,
 			);
 			name = "Groups Storyboard";
 			sourceTree = "<group>";
@@ -593,6 +609,9 @@
 				6ED17F071C1032E500978BCF /* BasicTableViewCell.h */,
 				6ED17F081C1032E500978BCF /* BasicTableViewCell.m */,
 				6ED17F091C1032E500978BCF /* BasicTableViewCell.xib */,
+				6E8703691BAA9D1000C2B128 /* GroupsMainCollectionViewCell.h */,
+				6E87036A1BAA9D1000C2B128 /* GroupsMainCollectionViewCell.m */,
+				6E87036B1BAA9D1000C2B128 /* GroupsMainCollectionViewCell.xib */,
 				6ED17F0A1C1032E500978BCF /* RoleTableViewCell.h */,
 				6ED17F0B1C1032E500978BCF /* RoleTableViewCell.m */,
 				6ED17F0C1C1032E500978BCF /* RoleTableViewCell.xib */,
@@ -683,9 +702,6 @@
 				6E57BE561BDE5B97003928BE /* GroupsCollectionViewController.m */,
 				6E2018981C02AF890032C2A3 /* GroupSetingViewController.h */,
 				6E2018991C02AF890032C2A3 /* GroupSetingViewController.m */,
-				6E8703691BAA9D1000C2B128 /* GroupsMainCollectionViewCell.h */,
-				6E87036A1BAA9D1000C2B128 /* GroupsMainCollectionViewCell.m */,
-				6E87036B1BAA9D1000C2B128 /* GroupsMainCollectionViewCell.xib */,
 				6E57BE521BDE5911003928BE /* GroupsTypeTabViewController.h */,
 				6E57BE531BDE5911003928BE /* GroupsTypeTabViewController.m */,
 				6EB7CCD11BD63C2900281ACA /* ResultsTableViewController.h */,
@@ -793,6 +809,7 @@
 				6E87036D1BAA9D1000C2B128 /* GroupsMainCollectionViewCell.xib in Resources */,
 				6EC648281BCB475D00457E4E /* GroupsMain.storyboard in Resources */,
 				6EC6482E1BCB4E1F00457E4E /* Me.storyboard in Resources */,
+				6E248D9C1C311F9300DACEAE /* Life.storyboard in Resources */,
 				6ED17F2E1C1032E500978BCF /* SocietyPostsTableViewCell.xib in Resources */,
 				6E583AF71C16BFA000785D00 /* filesByUser.plist in Resources */,
 				6EC648301BCB556100457E4E /* SocietyMain.storyboard in Resources */,
@@ -864,6 +881,7 @@
 				6EDCE1FE1C01C821002789FB /* TypeCollectionViewController.m in Sources */,
 				6E1C26211C09F5EA00958B28 /* AdminListTableViewController.m in Sources */,
 				6E087E751C1683AD00ED63BA /* FileViewController.m in Sources */,
+				6E248D9F1C312BD900DACEAE /* LifeMainViewController.m in Sources */,
 				6EFE44F41BDA3172001F0600 /* CommontEditViewController.m in Sources */,
 				6E44A5EF1BE34CD000A8993C /* MyInfoTableViewController.m in Sources */,
 				6ED3D88F1C05CB5F00A2159E /* PostDetailTableViewController.m in Sources */,

@@ -16,7 +16,7 @@
                 <subviews>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="国际和谐科学研究中心" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MBs-WE-V4a">
                         <rect key="frame" x="-6" y="67" width="79" height="47"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="MBs-WE-V4a" secondAttribute="height" multiplier="79:47" id="7U1-7W-b6t"/>
                         </constraints>

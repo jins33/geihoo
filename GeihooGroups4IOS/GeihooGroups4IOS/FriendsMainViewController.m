@@ -88,7 +88,7 @@ static NSString* const reuseIdentifier = @"contentCell";
 //定义UICollectionViewCell内容
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     long row = indexPath.row;
-    CGSize cellSize = [self cellSizeForSection];
+    CGSize cellSize = [self cellSize];
     GroupsMainCollectionViewCell *cell = (GroupsMainCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:kcellIdentifier forIndexPath:indexPath];
     CircleImageView *circleImageView = cell.societyIconImageView;
     SocietyBean *societyBean = friendsTypeData[row];
@@ -103,7 +103,7 @@ static NSString* const reuseIdentifier = @"contentCell";
 //定义每个UICollectionViewCell 的大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [self cellSizeForSection];
+    return [self cellSize];
 }
 
 //定义每个Section 的 margin
@@ -202,7 +202,7 @@ static NSString* const reuseIdentifier = @"contentCell";
     [_baseController presentViewController:viewController animated:YES completion:nil];
 }
 
-- (CGSize)cellSizeForSection{
+- (CGSize)cellSize{
     CGFloat cellWidth, cellHeight;
     cellWidth = (SCREEN_WIDTH-5*cellSpace)/4;
     cellHeight = cellWidth + 30;

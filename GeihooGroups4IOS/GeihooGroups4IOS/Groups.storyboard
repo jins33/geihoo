@@ -116,7 +116,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="qmE-rk-f7F"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="storyboardName" value="Trends"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="storyboardName" value="Life"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="needsTopLayoutGuide" value="NO"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
@@ -346,11 +346,11 @@
             </objects>
             <point key="canvasLocation" x="1012" y="-207"/>
         </scene>
-        <!--动态-->
+        <!--生活-->
         <scene sceneID="VF9-Gh-Vmz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yyB-f1-E4k" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="动态" image="main_tab_dt" id="Wdh-we-WLb"/>
+                    <tabBarItem key="tabBarItem" title="生活" image="main_tab_dt" id="Wdh-we-WLb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jjk-wh-Mms">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

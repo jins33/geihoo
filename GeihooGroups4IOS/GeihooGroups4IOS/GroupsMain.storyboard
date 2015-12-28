@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TfC-6h-3Pe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1095" y="-3066"/>
+            <point key="canvasLocation" x="613" y="-3054"/>
         </scene>
         <!--Results Table View Controller-->
         <scene sceneID="O8E-XH-Oh9">
@@ -72,7 +72,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVy-x4-qQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="613" y="-3838"/>
+            <point key="canvasLocation" x="176" y="-3834"/>
         </scene>
         <!--Groups Collection View Controller-->
         <scene sceneID="9eM-rR-85u">
@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rCY-a3-Xhx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="613" y="-3066"/>
+            <point key="canvasLocation" x="176" y="-3054"/>
         </scene>
         <!--选择类型-->
         <scene sceneID="Kub-uF-rvE">
@@ -481,7 +481,7 @@
         <!--族族-->
         <scene sceneID="s57-ae-N1d">
             <objects>
-                <viewController id="aFa-Ty-eY7" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="aFa-Ty-eY7" customClass="GroupsTypeTabViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VAy-gm-Xe8"/>
                         <viewControllerLayoutGuide type="bottom" id="Z8Q-2A-I6W"/>
@@ -489,20 +489,6 @@
                     <view key="view" contentMode="scaleToFill" id="CV1-lo-HIS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJa-08-U2d">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                                <connections>
-                                    <segue destination="Nfj-Ob-XeT" kind="embed" id="blN-ws-3eM"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="XJa-08-U2d" secondAttribute="trailing" id="7ut-nJ-pYv"/>
-                            <constraint firstItem="XJa-08-U2d" firstAttribute="top" secondItem="VAy-gm-Xe8" secondAttribute="bottom" id="OuQ-zA-zbD"/>
-                            <constraint firstItem="XJa-08-U2d" firstAttribute="leading" secondItem="CV1-lo-HIS" secondAttribute="leading" id="Vfg-Yh-A7H"/>
-                            <constraint firstItem="Z8Q-2A-I6W" firstAttribute="top" secondItem="XJa-08-U2d" secondAttribute="bottom" id="kiP-6M-I3z"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="族族" id="cVu-Iy-ISv">
                         <barButtonItem key="leftBarButtonItem" image="top_home_image" id="Enp-qk-tzZ">
@@ -573,25 +559,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="68b-qa-mWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="613" y="-2288"/>
-        </scene>
-        <!--Groups Type Tab View Controller-->
-        <scene sceneID="VBD-3m-XIB">
-            <objects>
-                <viewController id="Nfj-Ob-XeT" customClass="GroupsTypeTabViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eSa-SJ-QOF"/>
-                        <viewControllerLayoutGuide type="bottom" id="4a0-tx-3eM"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JX9-5k-BeM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hzM-Rs-puV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="176" y="-2736"/>
+            <point key="canvasLocation" x="176" y="-2276"/>
         </scene>
     </scenes>
     <resources>

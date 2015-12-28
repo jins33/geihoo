@@ -30,6 +30,7 @@
     _controllers = controllers;
     selectedTab = NSIntegerMax;
     _delegate = nil;
+    _indicatorView = [[UIView alloc] init];
 }
 
 - (void)loadView{
@@ -37,15 +38,20 @@
     _grayColor = GRAY_COLOR;
     _titleColor = SYSTEM_COLOR;
     self.view.backgroundColor = [UIColor whiteColor];
-    _indicatorView.backgroundColor= [UIColor blueColor];
     //    _statusHeight = [[UIApplication sharedApplication] statusBarFrame].size.height;
-    _statusHeight = 0;
-    _titleFont = [UIFont systemFontOfSize:17];
+    if (self.navigationController.navigationBarHidden) {
+        _statusHeight = 20;
+    }else{
+        _statusHeight = 64;
+    }
+    _titleFont = [UIFont systemFontOfSize:15];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    _indicatorView.backgroundColor= SYSTEM_COLOR;
     if (_controllers != nil)
     {
         [self loadUI];
@@ -132,8 +138,8 @@
     _indicatorView.frame = CGRectMake(0.0, _menuHeight + _statusHeight - 5.0, _tabWidth, 5.0);
     [self.view addSubview:_indicatorView];
     
-    _bottomHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0.0, _menuHeight - 1.0, self.view.frame.size.width, 1.0)];
-    _bottomHeaderView.backgroundColor = RGB(200, 200, 200);
+    _bottomHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0.0, _menuHeight + _statusHeight - 1.0, self.view.frame.size.width, 1.0)];
+    _bottomHeaderView.backgroundColor = _indicatorView.backgroundColor;
     [self.view addSubview:_bottomHeaderView];
     
     [self.view addSubview:_contentScrollView];
@@ -143,8 +149,9 @@
 {
     CGFloat width = scrollView.frame.size.width;
     int page = (scrollView.contentOffset.x + (0.5f * width)) / width;
-    float tabWidth = _indicatorView.frame.size.width;
-    _indicatorView.frame = CGRectMake(page * tabWidth, _menuHeight + _statusHeight - 5.0, tabWidth, 5.0);
+    [UIView animateWithDuration:0.3 animations:^{
+        _indicatorView.frame = CGRectMake(page * _tabWidth, _menuHeight + _statusHeight - 5.0, _tabWidth, 5.0);
+    }];
     [self deselectAllTabs];
     UIButton *tab = [_tabs objectAtIndex:page];
     [tab setSelected:YES];

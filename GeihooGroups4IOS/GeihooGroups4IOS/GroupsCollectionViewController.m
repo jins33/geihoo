@@ -46,7 +46,7 @@ static NSString * const resultsIdentifier = @"results";
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     long row = indexPath.row;
     long section = indexPath.section;
-    CGSize cellSize = [self cellSizeForSection];
+    CGSize cellSize = [self cellSize];
     GroupsMainCollectionViewCell *cell = (GroupsMainCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"mainConllectionCell" forIndexPath:indexPath];
     CircleImageView *circleImageView = cell.societyIconImageView;
     SocietyBean *societyBean = collectionData[section][row];
@@ -59,7 +59,7 @@ static NSString * const resultsIdentifier = @"results";
 
 //定义每个UICollectionViewCell 的大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return [self cellSizeForSection];
+    return [self cellSize];
 }
 
 //定义每个Section 的 margin
@@ -128,6 +128,9 @@ static NSString * const resultsIdentifier = @"results";
 
 #pragma mark -数据视图初始化
 -(void)initView{
+    
+    self.navigationController.navigationBarHidden = YES;
+    
     //通过Nib生成cell，然后注册 Nib的view需要继承 UICollectionViewCell
     [self.collectionView registerNib:[UINib nibWithNibName:@"GroupsMainCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:kcellIdentifier];
     //注册headerView Nib的view需要继承UICollectionReusableView
@@ -177,7 +180,7 @@ static NSString * const resultsIdentifier = @"results";
     [_baseController presentViewController:tabBarController animated:YES completion:nil];
 }
 
-- (CGSize)cellSizeForSection{
+- (CGSize)cellSize{
     int cellSpace = GROUPS_ITEMS_SPACE;
     CGFloat cellWidth, cellHeight;
     cellWidth = (SCREEN_WIDTH-5*cellSpace)/4;

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #define CIRCLE_TYPE 1
 #define RING_TYPE 2
+#define NORMAL_TYPE 3
 #define NO_TYPE 100
 
 @interface CircleImageView : UIImageView
