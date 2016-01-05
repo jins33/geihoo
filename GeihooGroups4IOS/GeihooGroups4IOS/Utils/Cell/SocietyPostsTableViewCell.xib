@@ -67,7 +67,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="75.5" id="0ZS-xB-g8p"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test_content_img_0" translatesAutoresizingMaskIntoConstraints="NO" id="Jw4-ov-0yb">

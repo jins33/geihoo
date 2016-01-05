@@ -48,7 +48,7 @@
     
     NSMutableArray *data = [NSMutableArray new];
     NSArray *titleArray = @[@"昵称", @"性别", @"地区", @"简介", @"我的主页"];
-    NSArray *detailArray = @[@"小女子", @"女", @"福建福州", @"我是个有点冲动的女孩", @""];
+    NSArray *detailArray = @[@"linda", @"女", @"福建福州", @"我是个有点冲动的女孩", @""];
     for (int i=0; i<titleArray.count; i++) {
         KeyValueBean *keyValueBean = [KeyValueBean new];
         keyValueBean.key = titleArray[i];

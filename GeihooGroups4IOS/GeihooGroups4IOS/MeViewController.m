@@ -52,7 +52,7 @@
     NSInteger section = indexPath.section;
     if (section == 0 && row == 0) {
         //我的主页
-        UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"myPage"];
+        UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"myMainPage"];
         [self.navigationController pushViewController:viewController animated:YES];
     }else if (section == 0 && row == 1){
         //我的消息
@@ -72,13 +72,20 @@
     
     [_headerView addGestureRecognizer:tapGesture];
     
-    //注册tableViewCell
+    //注册tableViewCellxcode-extend-plug-in
     UINib *cellNib = [UINib nibWithNibName:@"BasicTableViewCell" bundle:nil];
     [_meTableView registerNib:cellNib forCellReuseIdentifier:@"basicCell"];
 }
 
 -(void)showUserInfo:(id)sender{
-    MyInfoTableViewController *myInfoTableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"myView"];
+    MyInfoTableViewController *myInfoTableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"userInfo"];
     [self.navigationController pushViewController:myInfoTableViewController animated:YES];
+}
+- (IBAction)showBarcode:(id)sender {
+    // create a customView with a image
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"weixindemo"]];
+    imageView.frame = CGRectMake(0, 0, SCREEN_WIDTH-50, SCREEN_WIDTH);
+    JCAlertView *customAlert = [[JCAlertView alloc] initWithCustomView:imageView dismissWhenTouchedBackground:YES];
+    [customAlert show];
 }
 @end

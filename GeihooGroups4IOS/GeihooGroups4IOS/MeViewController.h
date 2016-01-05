@@ -11,9 +11,12 @@
 #import "BasicTableViewCell.h"
 #import "CircleImageView.h"
 #import "UIImage+ImageAddition.h"
+#import "JCAlertView.h"
+#import "SystemPrefixHeader.pch"
 
 @interface MeViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *meTableView;
 @property (weak, nonatomic) IBOutlet UIView *headerView;
+- (IBAction)showBarcode:(id)sender;
 
 @end

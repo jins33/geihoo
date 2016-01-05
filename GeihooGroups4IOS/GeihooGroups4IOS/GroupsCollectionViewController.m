@@ -97,11 +97,11 @@ static NSString * const resultsIdentifier = @"results";
         if ([headerText hasPrefix:@"常用族族"]) {
             headerView.editCommonGroupsBtn.hidden = NO;
             //通过ReactiveCocoa注册editCommonGroupsBtn点击事件
-            [[headerView.editCommonGroupsBtn rac_signalForControlEvents:UIControlEventTouchUpInside]
-             subscribeNext:^(id x) {
-                 UITableViewController *tableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"editTableView"];
-                 [_baseController.navigationController pushViewController:tableViewController animated:YES];
-             }];
+            headerView.editCommonGroupsBtn.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+                UITableViewController *tableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"editTableView"];
+                [_baseController.navigationController pushViewController:tableViewController animated:YES];
+                return [RACSignal empty];
+            }];
         }else{
             headerView.editCommonGroupsBtn.hidden = YES;
         }

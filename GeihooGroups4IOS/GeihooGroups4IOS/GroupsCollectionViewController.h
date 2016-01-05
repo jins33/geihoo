@@ -18,7 +18,7 @@
 #import "ResultsTableViewController.h"
 #import "GroupsTypeTabViewController.h"
 
-@interface GroupsCollectionViewController : UIViewController<UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UISearchBarDelegate>
+@interface GroupsCollectionViewController : UIViewController<UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource,UISearchBarDelegate>
 
 @property (nonatomic, strong) UIViewController *baseController;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;

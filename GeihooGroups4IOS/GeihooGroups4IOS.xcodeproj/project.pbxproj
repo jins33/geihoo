@@ -13,7 +13,6 @@
 		6E011BF41BB2CEF700A9688D /* ContactListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E011BF31BB2CEF700A9688D /* ContactListTableViewController.m */; };
 		6E01AEDD1B9D822600B4FE99 /* SocietyPostBeans.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E01AEDC1B9D822600B4FE99 /* SocietyPostBeans.m */; };
 		6E087E681C167AE400ED63BA /* filesByType.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E087E631C167AE400ED63BA /* filesByType.plist */; };
-		6E087E691C167AE400ED63BA /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E087E651C167AE400ED63BA /* HeadView.m */; };
 		6E087E721C1682B400ED63BA /* CommonCellBeanGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E087E701C1682B400ED63BA /* CommonCellBeanGroup.m */; };
 		6E087E751C1683AD00ED63BA /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E087E741C1683AD00ED63BA /* FileViewController.m */; };
 		6E087E7D1C1687A400ED63BA /* CommonCellBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E087E7C1C1687A400ED63BA /* CommonCellBean.m */; };
@@ -30,10 +29,16 @@
 		6E248D9C1C311F9300DACEAE /* Life.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E248D9B1C311F9300DACEAE /* Life.storyboard */; };
 		6E248D9F1C312BD900DACEAE /* LifeMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E248D9E1C312BD900DACEAE /* LifeMainViewController.m */; };
 		6E263C8A1C0EC1C3004CFE33 /* AddActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E263C891C0EC1C3004CFE33 /* AddActivityViewController.m */; };
+		6E3705AA1C34F87B00F51B81 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3705A91C34F87B00F51B81 /* HeadView.m */; };
+		6E3705BC1C350DB900F51B81 /* MyMainPageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3705BB1C350DB900F51B81 /* MyMainPageTableViewCell.m */; };
+		6E3705BF1C351B8400F51B81 /* AlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3705BE1C351B8400F51B81 /* AlbumCollectionViewCell.m */; };
 		6E41464B1BCDE9060057A359 /* AlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E41464A1BCDE9060057A359 /* AlbumTableViewController.m */; };
 		6E41464E1BCDE9630057A359 /* AlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E41464D1BCDE9630057A359 /* AlbumTableViewCell.m */; };
 		6E44A5EF1BE34CD000A8993C /* MyInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E44A5EE1BE34CD000A8993C /* MyInfoTableViewController.m */; };
 		6E44A5F51BE34FF500A8993C /* KeyValueBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E44A5F41BE34FF500A8993C /* KeyValueBean.m */; };
+		6E52D60D1C3258AB004E87F5 /* MyMainPageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E52D60C1C3258AB004E87F5 /* MyMainPageTableViewController.m */; };
+		6E52D6111C32732C004E87F5 /* PicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E52D60F1C32732C004E87F5 /* PicTableViewCell.m */; };
+		6E52D6121C32732C004E87F5 /* PicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E52D6101C32732C004E87F5 /* PicTableViewCell.xib */; };
 		6E57BE541BDE5911003928BE /* GroupsTypeTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E57BE531BDE5911003928BE /* GroupsTypeTabViewController.m */; };
 		6E57BE571BDE5B97003928BE /* GroupsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E57BE561BDE5B97003928BE /* GroupsCollectionViewController.m */; };
 		6E583AF71C16BFA000785D00 /* filesByUser.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E583AF61C16BFA000785D00 /* filesByUser.plist */; };
@@ -130,8 +135,6 @@
 		6E01AEDB1B9D822600B4FE99 /* SocietyPostBeans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocietyPostBeans.h; sourceTree = "<group>"; };
 		6E01AEDC1B9D822600B4FE99 /* SocietyPostBeans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocietyPostBeans.m; sourceTree = "<group>"; };
 		6E087E631C167AE400ED63BA /* filesByType.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = filesByType.plist; sourceTree = "<group>"; };
-		6E087E641C167AE400ED63BA /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeadView.h; path = ../HeadView.h; sourceTree = "<group>"; };
-		6E087E651C167AE400ED63BA /* HeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeadView.m; path = ../HeadView.m; sourceTree = "<group>"; };
 		6E087E6D1C1682B400ED63BA /* CommonCellBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCellBean.h; sourceTree = "<group>"; };
 		6E087E6F1C1682B400ED63BA /* CommonCellBeanGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCellBeanGroup.h; sourceTree = "<group>"; };
 		6E087E701C1682B400ED63BA /* CommonCellBeanGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCellBeanGroup.m; sourceTree = "<group>"; };
@@ -163,6 +166,12 @@
 		6E248D9E1C312BD900DACEAE /* LifeMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeMainViewController.m; sourceTree = "<group>"; };
 		6E263C881C0EC1C3004CFE33 /* AddActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddActivityViewController.h; sourceTree = "<group>"; };
 		6E263C891C0EC1C3004CFE33 /* AddActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddActivityViewController.m; sourceTree = "<group>"; };
+		6E3705A81C34F87B00F51B81 /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
+		6E3705A91C34F87B00F51B81 /* HeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadView.m; sourceTree = "<group>"; };
+		6E3705BA1C350DB900F51B81 /* MyMainPageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMainPageTableViewCell.h; sourceTree = "<group>"; };
+		6E3705BB1C350DB900F51B81 /* MyMainPageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMainPageTableViewCell.m; sourceTree = "<group>"; };
+		6E3705BD1C351B8400F51B81 /* AlbumCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCollectionViewCell.h; sourceTree = "<group>"; };
+		6E3705BE1C351B8400F51B81 /* AlbumCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCollectionViewCell.m; sourceTree = "<group>"; };
 		6E4146491BCDE9060057A359 /* AlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumTableViewController.h; sourceTree = "<group>"; };
 		6E41464A1BCDE9060057A359 /* AlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumTableViewController.m; sourceTree = "<group>"; };
 		6E41464C1BCDE9630057A359 /* AlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumTableViewCell.h; sourceTree = "<group>"; };
@@ -171,6 +180,11 @@
 		6E44A5EE1BE34CD000A8993C /* MyInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfoTableViewController.m; sourceTree = "<group>"; };
 		6E44A5F31BE34FF500A8993C /* KeyValueBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValueBean.h; sourceTree = "<group>"; };
 		6E44A5F41BE34FF500A8993C /* KeyValueBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueBean.m; sourceTree = "<group>"; };
+		6E52D60B1C3258AB004E87F5 /* MyMainPageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMainPageTableViewController.h; sourceTree = "<group>"; };
+		6E52D60C1C3258AB004E87F5 /* MyMainPageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMainPageTableViewController.m; sourceTree = "<group>"; };
+		6E52D60E1C32732C004E87F5 /* PicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicTableViewCell.h; sourceTree = "<group>"; };
+		6E52D60F1C32732C004E87F5 /* PicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicTableViewCell.m; sourceTree = "<group>"; };
+		6E52D6101C32732C004E87F5 /* PicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicTableViewCell.xib; sourceTree = "<group>"; };
 		6E57BE521BDE5911003928BE /* GroupsTypeTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsTypeTabViewController.h; sourceTree = "<group>"; };
 		6E57BE531BDE5911003928BE /* GroupsTypeTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsTypeTabViewController.m; sourceTree = "<group>"; };
 		6E57BE551BDE5B97003928BE /* GroupsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsCollectionViewController.h; sourceTree = "<group>"; };
@@ -374,8 +388,23 @@
 				6E104B6D1BB916CE0055015C /* MeViewController.m */,
 				6E44A5ED1BE34CD000A8993C /* MyInfoTableViewController.h */,
 				6E44A5EE1BE34CD000A8993C /* MyInfoTableViewController.m */,
+				6E52D60B1C3258AB004E87F5 /* MyMainPageTableViewController.h */,
+				6E52D60C1C3258AB004E87F5 /* MyMainPageTableViewController.m */,
+				6E3705BA1C350DB900F51B81 /* MyMainPageTableViewCell.h */,
+				6E3705BB1C350DB900F51B81 /* MyMainPageTableViewCell.m */,
+				6E3705BD1C351B8400F51B81 /* AlbumCollectionViewCell.h */,
+				6E3705BE1C351B8400F51B81 /* AlbumCollectionViewCell.m */,
 			);
 			name = Me;
+			sourceTree = "<group>";
+		};
+		6E3705A71C34F87B00F51B81 /* HeadView */ = {
+			isa = PBXGroup;
+			children = (
+				6E3705A81C34F87B00F51B81 /* HeadView.h */,
+				6E3705A91C34F87B00F51B81 /* HeadView.m */,
+			);
+			path = HeadView;
 			sourceTree = "<group>";
 		};
 		6E5E9F561C302BBE0035FBF4 /* Life */ = {
@@ -574,11 +603,10 @@
 		6ED17EFC1C1032E500978BCF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				6E087E641C167AE400ED63BA /* HeadView.h */,
-				6E087E651C167AE400ED63BA /* HeadView.m */,
 				6ED17EFD1C1032E500978BCF /* Addition */,
 				6ED17F061C1032E500978BCF /* Cell */,
 				6ED17F101C1032E500978BCF /* CircleUtil */,
+				6E3705A71C34F87B00F51B81 /* HeadView */,
 				6ED17F151C1032E500978BCF /* JPTabViewController */,
 				6ED17F181C1032E500978BCF /* Layout */,
 				6ED17F1B1C1032E500978BCF /* MyDatePickerView */,
@@ -618,6 +646,9 @@
 				6ED17F0D1C1032E500978BCF /* SocietyPostsTableViewCell.h */,
 				6ED17F0E1C1032E500978BCF /* SocietyPostsTableViewCell.m */,
 				6ED17F0F1C1032E500978BCF /* SocietyPostsTableViewCell.xib */,
+				6E52D60E1C32732C004E87F5 /* PicTableViewCell.h */,
+				6E52D60F1C32732C004E87F5 /* PicTableViewCell.m */,
+				6E52D6101C32732C004E87F5 /* PicTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -830,6 +861,7 @@
 				6E011BF11BB2CC8F00A9688D /* ContactListTableViewCell.xib in Resources */,
 				6EC6482C1BCB4DBA00457E4E /* Trends.storyboard in Resources */,
 				6ED17F341C1032E500978BCF /* MyDatePickerView.xib in Resources */,
+				6E52D6121C32732C004E87F5 /* PicTableViewCell.xib in Resources */,
 				6E583AF91C16C53300785D00 /* filesByTime.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -888,6 +920,7 @@
 				6E583AFC1C16C86900785D00 /* FileTabViewController.m in Sources */,
 				6E89ED291BB3D31F009D3EDC /* TrendsViewController.m in Sources */,
 				6E087E7D1C1687A400ED63BA /* CommonCellBean.m in Sources */,
+				6E3705AA1C34F87B00F51B81 /* HeadView.m in Sources */,
 				6ED17F291C1032E500978BCF /* BasicTableViewCell.m in Sources */,
 				6EEF72661BCA4BCA006939EE /* PhotoCollectionViewController.m in Sources */,
 				6ED17F271C1032E500978BCF /* UIView+ViewAddition.m in Sources */,
@@ -897,8 +930,10 @@
 				6E20189A1C02AF890032C2A3 /* GroupSetingViewController.m in Sources */,
 				6ED17F251C1032E500978BCF /* NSDictionary+StringAttributeForKey.m in Sources */,
 				6E68A9291BAF8803001D5E91 /* GroupsCellFooterCollectionReusableView.m in Sources */,
+				6E52D6111C32732C004E87F5 /* PicTableViewCell.m in Sources */,
 				6ECFE0F31C044B98002EB5A0 /* AddMemberViewController.m in Sources */,
 				6E64935C1C1A7D5700386D54 /* FriendsMainViewController.m in Sources */,
+				6E52D60D1C3258AB004E87F5 /* MyMainPageTableViewController.m in Sources */,
 				6E1DBA231BB14B4B0009428F /* ContactsTabViewController.m in Sources */,
 				6EC5ACC41BCBB338006F6280 /* PresentActivityTableViewController.m in Sources */,
 				6E104B6E1BB916CE0055015C /* MeViewController.m in Sources */,
@@ -909,7 +944,6 @@
 				6E1C0E651BD74152006889C3 /* SocietyBean.m in Sources */,
 				6ED83C7B1C0C3BF800BF1E1A /* ActivityMainViewController.m in Sources */,
 				6EF1C19C1C05659800E34F6C /* PicCollectionViewCell.m in Sources */,
-				6E087E691C167AE400ED63BA /* HeadView.m in Sources */,
 				6E41464E1BCDE9630057A359 /* AlbumTableViewCell.m in Sources */,
 				6EBAA1681BABF21B0063E251 /* GroupsCellHeaderCollectionReusableView.m in Sources */,
 				6EB951671C0B3F490026A957 /* MemberTabViewController.m in Sources */,
@@ -939,6 +973,7 @@
 				6ED17F2D1C1032E500978BCF /* SocietyPostsTableViewCell.m in Sources */,
 				6ED17F261C1032E500978BCF /* UIImage+ImageAddition.m in Sources */,
 				6EFF1A161C0ADB1700F8040E /* MemberShipViewController.m in Sources */,
+				6E3705BF1C351B8400F51B81 /* AlbumCollectionViewCell.m in Sources */,
 				6ED17F351C1032E500978BCF /* PlaceholderTextView.m in Sources */,
 				6E01AEDD1B9D822600B4FE99 /* SocietyPostBeans.m in Sources */,
 				6EB7CCD31BD63C2900281ACA /* ResultsTableViewController.m in Sources */,
@@ -953,6 +988,7 @@
 				6E88C9D81B8F00F200475EBF /* main.m in Sources */,
 				6E20189D1C02BEB80032C2A3 /* SelectMemberTableViewController.m in Sources */,
 				6ED929151C06B7C900E0EF37 /* PhotoMainViewController.m in Sources */,
+				6E3705BC1C350DB900F51B81 /* MyMainPageTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1057,7 +1093,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geihoo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f03288ef-9e59-4be6-b0b3-62bee9b2df20";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1074,7 +1110,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geihoo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f03288ef-9e59-4be6-b0b3-62bee9b2df20";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

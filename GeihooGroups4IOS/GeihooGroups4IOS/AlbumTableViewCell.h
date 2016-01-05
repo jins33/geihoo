@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AlbumTableViewCell : UITableViewCell
+@interface AlbumTableViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *albumPhotoImageView;
 @property (weak, nonatomic) IBOutlet UILabel *albumNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *photoNumLabel;
