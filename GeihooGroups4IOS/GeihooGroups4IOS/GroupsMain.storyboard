@@ -86,8 +86,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDw-Hx-GVz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="yiF-Lh-ccR"/>
+                                </constraints>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Sf-uZ-QjD">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="475"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rFT-hc-4ge">
                                     <size key="itemSize" width="50" height="50"/>
@@ -101,13 +108,6 @@
                                     <outlet property="delegate" destination="quN-RO-deL" id="Ti2-kf-tsu"/>
                                 </connections>
                             </collectionView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDw-Hx-GVz">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="yiF-Lh-ccR"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -117,7 +117,7 @@
                             <constraint firstAttribute="trailing" secondItem="0Sf-uZ-QjD" secondAttribute="trailing" id="aSj-RF-Uvc"/>
                             <constraint firstAttribute="trailing" secondItem="uDw-Hx-GVz" secondAttribute="trailing" id="aTc-HA-x49"/>
                             <constraint firstItem="uDw-Hx-GVz" firstAttribute="leading" secondItem="Mbe-Z3-9tV" secondAttribute="leading" id="efj-8x-xFX"/>
-                            <constraint firstItem="d7U-74-Air" firstAttribute="top" secondItem="0Sf-uZ-QjD" secondAttribute="bottom" id="rcy-to-pFx"/>
+                            <constraint firstItem="d7U-74-Air" firstAttribute="top" secondItem="0Sf-uZ-QjD" secondAttribute="bottom" constant="49" id="rcy-to-pFx"/>
                         </constraints>
                     </view>
                     <connections>

@@ -46,12 +46,12 @@
     //初始化帖子图片
     [cell.postImageView setImage:[UIImage imageNamed:[societyPostBeans postImage]]];
     //通过ReactiveCocoa注册commentBtn点击事件
-    [[cell.commentBtn rac_signalForControlEvents:UIControlEventTouchUpInside]
-     subscribeNext:^(id x) {
-         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"SocietyMain" bundle:nil];
-         UITableViewController *tableViewController = [storyboard instantiateViewControllerWithIdentifier:@"postDetail"];
-         [self.navigationController pushViewController:tableViewController animated:YES];
-     }];
+    cell.commentBtn.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"SocietyMain" bundle:nil];
+        UITableViewController *tableViewController = [storyboard instantiateViewControllerWithIdentifier:@"postDetail"];
+        [self.navigationController pushViewController:tableViewController animated:YES];
+        return [RACSignal empty];
+    }];
     return cell;
 }
 

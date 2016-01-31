@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -15,7 +16,6 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="陈知明" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2a-cq-ykb">
                         <rect key="frame" x="66" y="12" width="51" height="21"/>
-                        <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="ll1-y5-Zzi"/>
                         </constraints>
@@ -25,7 +25,6 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="你好" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rR7-kc-qq8">
                         <rect key="frame" x="66" y="36" width="79" height="21"/>
-                        <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="ZB8-qK-aMB"/>
                         </constraints>
@@ -35,7 +34,6 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="18:50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRA-w5-9yy">
                         <rect key="frame" x="275" y="12" width="37" height="21"/>
-                        <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="kng-ST-qLB"/>
                         </constraints>
@@ -45,7 +43,6 @@
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbP-u4-KvS" customClass="CircleImageButton">
                         <rect key="frame" x="8" y="10" width="50" height="50"/>
-                        <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="ctd-9u-cAW"/>
                             <constraint firstAttribute="width" constant="50" id="uiA-Ov-Syk"/>
@@ -58,7 +55,6 @@
                         </userDefinedRuntimeAttributes>
                     </button>
                 </subviews>
-                <animations/>
                 <constraints>
                     <constraint firstItem="B2a-cq-ykb" firstAttribute="leading" secondItem="rbP-u4-KvS" secondAttribute="trailing" constant="8" id="42m-l2-qFB"/>
                     <constraint firstItem="B2a-cq-ykb" firstAttribute="top" secondItem="rbP-u4-KvS" secondAttribute="top" constant="4" id="821-bY-r4V"/>
@@ -70,7 +66,6 @@
                     <constraint firstItem="rR7-kc-qq8" firstAttribute="top" secondItem="B2a-cq-ykb" secondAttribute="bottom" constant="3" id="gvf-KA-ydn"/>
                 </constraints>
             </tableViewCellContentView>
-            <animations/>
             <connections>
                 <outlet property="messageLabel" destination="rR7-kc-qq8" id="o8l-Yp-Tca"/>
                 <outlet property="timeLabel" destination="cRA-w5-9yy" id="7b5-Kd-G5a"/>

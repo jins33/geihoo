@@ -54,14 +54,19 @@
         [cell.postDescriptionTextView setText:[societyPostBeans postDescription]];
         cell.postDescriptionTextView.font = [UIFont systemFontOfSize:15];
         //初始化帖子图片
-        [cell.postImageView setImage:[UIImage imageNamed:[societyPostBeans postImage]]];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            UIImage *image = [UIImage imageNamed:[societyPostBeans postImage]];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [cell.postImageView setImage:image];
+            });
+        });
         //通过ReactiveCocoa注册commentBtn点击事件
-        [[cell.commentBtn rac_signalForControlEvents:UIControlEventTouchUpInside]
-         subscribeNext:^(id x) {
-             UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"SocietyMain" bundle:nil];
-             UITableViewController *tableViewController = [storyboard instantiateViewControllerWithIdentifier:@"postDetail"];
-             [self.navigationController pushViewController:tableViewController animated:YES];
-         }];
+        cell.commentBtn.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"SocietyMain" bundle:nil];
+            UITableViewController *tableViewController = [storyboard instantiateViewControllerWithIdentifier:@"postDetail"];
+            [self.navigationController pushViewController:tableViewController animated:YES];
+            return [RACSignal empty];
+        }];
         return cell;
 }
 
@@ -73,7 +78,16 @@
     //添加_memberView点击事件
     UITapGestureRecognizer*tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(showMemberInfo:)];
     [_memberView addGestureRecognizer:tapGesture];
-
+    
+    //添加上拉刷新
+     _postTableView.mj_header = ({
+         MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+             [_postTableView.mj_header endRefreshing];
+         }];
+        header.lastUpdatedTimeLabel.hidden = YES;
+        header.stateLabel.hidden = YES;
+        header;
+    });
 }
 
 -(void)initData{

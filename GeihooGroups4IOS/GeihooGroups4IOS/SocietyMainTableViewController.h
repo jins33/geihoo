@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <MJRefresh.h>
 #import "SystemPrefixHeader.pch"
 #import "SocietyPostsTableViewCell.h"
 #import "SocietyPostBeans.h"
